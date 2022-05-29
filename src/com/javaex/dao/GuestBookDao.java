@@ -97,7 +97,7 @@ public class GuestBookDao {
 		try {
 			// SQL문 준비
 			String query = "";
-			query += " delete from person ";
+			query += " delete from guestbook ";
 			query += " where no = ? ";
 
 			// 바인딩
@@ -127,11 +127,12 @@ public class GuestBookDao {
 		try {
 			// SQL문 준비
 			String query = "";
-			query += " select person_id,";
+			query += " select no,";
 			query += " 		  name,";
-			query += " 		  hp,";
-			query += " 		  company";
-			query += " from person ";
+			query += " 		  password,";
+			query += " 		  content,";
+			query += " 		  reg_date";
+			query += " from guestbook ";
 
 			// 바인딩
 			pstmt = conn.prepareStatement(query);

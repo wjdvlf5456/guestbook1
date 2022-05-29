@@ -10,7 +10,7 @@ public class TestApp {
 		
 		GuestBookVo guestBookVo = new GuestBookVo("유재석","###","잘가","2000-12-12");
 		
-		guestbookDao.guestbookInsert(guestBookVo);
+		guestbookDao.guestAdd(guestBookVo);
 		
 		
 		

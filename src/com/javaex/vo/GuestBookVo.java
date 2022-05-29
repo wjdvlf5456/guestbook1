@@ -1,4 +1,4 @@
-package com.javaex.dao;
+package com.javaex.vo;
 
 public class GuestBookVo {
 
@@ -16,7 +16,6 @@ public class GuestBookVo {
 	}
 
 	public GuestBookVo(String name, String password, String content, String regDate) {
-		super();
 		this.name = name;
 		this.password = password;
 		this.content = content;
@@ -24,7 +23,6 @@ public class GuestBookVo {
 	}
 
 	public GuestBookVo(int no, String name, String password, String content, String regDate) {
-		super();
 		this.no = no;
 		this.name = name;
 		this.password = password;
